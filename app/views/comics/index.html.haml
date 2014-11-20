@@ -1,0 +1,12 @@
+%div.title.text-center
+  %h1 Comics Archive
+%div.comic-year-comics
+  - group_months(@comics).sort.reverse.each do |month, comics|
+    %div.text-center
+      %h3= month.strftime("%B %Y")
+      - for comic in comics
+        %p
+          = link_to comic.title, comic_path(comic)
+          - if logged_in?
+            %span.delete-item
+              =link_to "[Delete]", comic_path(comic), method: 'delete'

@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+.comic-image {
+  background-color: $red;
+  border: 5px solid #eee;
+  border-radius: $radius-default;
+  padding: 20px 0 20px 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  img {
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+  }
+  .comic-nav {
+    margin-top: 10px;
+  }
+}
+.social-nav {
+  font-size: 4em;
+  background-color: white;
+  margin-top: 10px;
+  border: 5px solid black;
+  border-radius: $radius-default;
+  margin-right: 30px;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .comic-image {
+    background-color: $background-blue;
+    border: none;
+    border-radius: none;
+  }
+}

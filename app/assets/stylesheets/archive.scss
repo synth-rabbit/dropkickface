@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.comic-year {
+  background-color: $red;
+  color: white;
+  border: 5px solid black;
+  border-radius: $radius-round;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.comic-year-comics {
+  background-color: #eee;
+  color: black;
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-right:30px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .comic-year-comics {
+    text-align: center;
+  }
+}

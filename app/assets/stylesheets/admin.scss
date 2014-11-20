@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+.nav-tabs {
+  background-color: $background-blue;
+  li {
+    a {
+      background-color: $yellow;
+    }
+  }
+}
+
+.logout-btn {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.tab-background{
+  background-color: $red;
+  border-radius: $radius-default;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+#comics-form, #posts-form {
+  color: white;
+  padding: 20px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: $red !important;
+  color: $yellow !important;
+  border-color: $red !important;
+}

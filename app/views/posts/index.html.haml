@@ -1,0 +1,31 @@
+%div.title.text-center
+  %h1 Drop Kick to the Face Blog
+
+%div.blog-wrapper.row
+  %div.blog.col-sm-9
+    -@posts.each do |post|
+      %div.blog-post
+        %h2= link_to post.title, post_path(post)
+        - if logged_in?
+          %span.delete-item
+            =link_to "[Delete Post]", post_path(post), method: 'delete'
+        %p
+          Posted on #{post.created_date} by
+          =link_to post.user.full_name, about_path(anchor: post.name_link)
+        =link_to post_path(post) do
+          =image_tag "#{post.banner_url}", class: "img-responsive"
+        %p
+          %span In this post:
+          = post.description
+          = link_to "Read", post_path(post)
+  %div.sidebar.col-sm-3.text-center
+    %div.follow-us
+      %h2 Follow
+      = link_to "", "#", class: 'icon-googleplus', title: 'Share Google Plus'
+      = link_to "", "#", class: 'icon-facebook', title: 'Share Facebook'
+      = link_to "", "#", class: 'icon-twitter', title: 'Share Twitter'
+      = link_to "", "#", class: 'icon-feed', title: 'Follow Feed'
+      %h2 Share
+      <a class="social-share-button-google_plus icon-googleplus" data-site="google_plus" href="#" onclick="return SocialShareButton.share(this);" rel="nofollow " title="Share to Google Plus"></a>
+      <a class="social-share-button-facebook icon-facebook" data-site="facebook" href="#" onclick="return SocialShareButton.share(this);" rel="nofollow " title="Share to Facebook"></a>
+      <a class="social-share-button-twitter icon-twitter" data-site="twitter" href="#" onclick="return SocialShareButton.share(this);" rel="nofollow " title="Share to Twitter"></a>

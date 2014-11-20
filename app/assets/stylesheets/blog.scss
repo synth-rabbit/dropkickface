@@ -1,0 +1,93 @@
+@import "variables.scss";
+
+.blog {
+  background-color: $red;
+  border: 5px solid white;
+  border-radius: $radius-default;
+  margin-top: 10px;
+  .blog-post {
+    background-color: #eee;;
+    border: 5px solid black;
+    border-radius: $radius-default;
+    color: black;
+    padding: 5px 10px;
+    margin: 10px 0;
+    h2 a{
+      color: $red;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    img {
+      margin-bottom: 10px;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.share-post {
+  a {
+    font-size: 2em;
+    &:hover {
+    font-weight: bold;
+    text-decoration: none;
+    }
+  }
+  .share {
+    font-size: 1.3em;
+  }
+}
+
+.follow-us {
+  position: fixed;
+  background-color: white;
+  color: black;
+  border: 5px solid black;
+  border-radius: $radius-round;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  a {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.post-header {
+  background-color: $red;
+  border: 5px solid black;
+  border-radius: $radius-default $radius-default 0 0;
+  padding: 0px 10px;
+  color: white;
+  margin-right: 30px;
+  margin-top: 10px;
+  img {
+    margin: 10px auto 10px auto;
+  }
+  p a {
+    color: $yellow;
+  }
+}
+
+.post-body {
+  background-color: white;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 0 0 $radius-default $radius-default;
+  color: black;
+  padding: 5px 10px;
+  margin-right: 30px;
+  p {
+    margin: 20px 20px;
+  }
+}
+
+.share-header {
+  font-size: 1.6em;
+}

@@ -1,0 +1,68 @@
+@import "variables.scss";
+.navbar-default {
+  background-color: $red !important;
+  border: 5px solid white;
+  border-radius: $radius-default;
+  margin-top: 10px;
+}
+.button-nav li button {
+  background-color: $yellow;
+  border-radius: $radius-round;
+  padding: 5px 20px 5px 20px;
+  margin-right: 20px;
+  font-size: 1.5em;
+  &:hover {
+    background-color: $yellow;
+  }
+    a {
+      // font-size: 1.5em;
+      color: #000;
+      &:hover {
+        color: $red;
+        text-decoration: none;
+      }
+    }
+}
+
+.navbar-nav {
+  line-height: 125px;
+}
+
+.navbar-form {
+  line-height: 105px;
+}
+.navbar-brand {
+  color: white !important;
+  height: 125px;
+  margin: 0 auto 5px auto;
+
+}
+
+@media screen and (max-width: 640px) {
+    .navbar-nav {
+      line-height: 0;
+    }
+    .navbar-form {
+      display: none;
+    }
+    .button-nav li {
+      background-color: $yellow;
+      border: 3px solid white;
+      margin-top: 3px;
+      border-radius: $radius-round;
+      text-align: center;
+      button {
+        background-color: none;
+        border: none;
+        border-radius: none;
+        padding: none;
+        margin-right: none;
+      }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-form {
+    display: none;
+  }
+}

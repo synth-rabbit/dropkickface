@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+#footer {
+  background-color: $red;
+  border: 5px solid white;
+  border-radius: $radius-default;
+  margin-top: 10px;
+  p {
+    font-size: 1.5em;
+    color: #eee;
+    margin-top: 10px;
+
+  }
+}

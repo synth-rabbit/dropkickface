@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "header.scss";
+@import "variables.scss";
+
+@font-face {
+  font-family: 'icomoon';
+  src:font-url('icomoon.eot');
+  src:font-url('icomoon.eot') format('embedded-opentype'),
+    url('icomoon.woff') format('woff'),
+    url('icomoon.ttf') format('truetype'),
+    url('icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon-googleplus:before {
+  content: "\e600";
+}
+.icon-facebook:before {
+  content: "\e601";
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+.icon-feed:before {
+  content: "\e603";
+}
+
+body {
+  background-color: $background-blue;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.ui-index {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.delete-item a{
+  color: black !important;
+  font-weight: bold;
+  &:hover {
+    color: black !important;
+  }
+}
+
+.title {
+  background-color: $yellow;
+  border: 5px solid black;
+  border-radius: $radius-round;
+  color: black;
+  margin-right: 30px;
+}
+
+.icon-googleplus {
+  color: $googleplusCol;
+  &:hover {
+    color: $googleplusCol;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.icon-facebook {
+  color: $facebookCol;
+  &:hover {
+    color: $facebookCol;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.icon-twitter {
+  color: $twitterCol;
+  &:hover {
+    color: $twitterCol;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.icon-feed {
+  color: $feedCol;
+  &:hover {
+    color: $feedCol;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
