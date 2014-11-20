@@ -1,7 +1,7 @@
 %div.title.text-center
   %h1 Comics Archive
 %div.comic-year-comics
-  - group_months(@comics).sort.reverse.each do |month, comics|
+  - @comics do |month, comics|
     %div.text-center
       %h3= month.strftime("%B %Y")
       - for comic in comics
