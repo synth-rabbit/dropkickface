@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root to: "comics#home", id: Comic.last.id
+  root to: "pages#about"
   get 'about', to: 'pages#about'
-  resources :comics, only: [:index, :show, :create, :destroy]
   get 'blog', to: 'posts#index'
   resources :posts, only: [:show, :create, :destroy]
   get 'login', to: 'sessions#new'
