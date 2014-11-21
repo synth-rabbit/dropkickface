@@ -1,9 +1,9 @@
 
-Comic.create(title: "Comic#{i}", img_url: "http://fpoimg.com/600x700?text=Comic_1")
-Comic.create(title: "Comic#{i}", img_url: "http://fpoimg.com/600x700?text=Comic_2")
-Comic.create(title: "Comic#{i}", img_url: "http://fpoimg.com/600x700?text=Comic_3")
-Comic.create(title: "Comic#{i}", img_url: "http://fpoimg.com/600x700?text=Comic_4")
-Comic.create(title: "Comic#{i}", img_url: "http://fpoimg.com/600x700?text=Comic_5")
+Comic.create(title: "Comic_1", img_url: "http://fpoimg.com/600x700?text=Comic_1")
+Comic.create(title: "Comic_2", img_url: "http://fpoimg.com/600x700?text=Comic_2")
+Comic.create(title: "Comic_3", img_url: "http://fpoimg.com/600x700?text=Comic_3")
+Comic.create(title: "Comic_4", img_url: "http://fpoimg.com/600x700?text=Comic_4")
+Comic.create(title: "Comic_5", img_url: "http://fpoimg.com/600x700?text=Comic_5")
 
 
 Post.create(title: "Bacon", user_id: 1, banner_url: "http://fpoimg.com/800x200", description: "Jowl boudin salami, brisket sirloin ribeye flank. Chuck tongue sirloin, shoulder jerky corned beef short loin. Kevin salami cupim chicken ham hock sirloin short ribs pork flank ground round landjaeger pig. Pastrami leberkas t-bone landjaeger frankfurter sausage.", body: "Bacon ipsum dolor amet fatback ham hock prosciutto drumstick venison salami shoulder brisket swine. Bresaola andouille jerky leberkas cow fatback. Ball tip andouille jerky shank fatback, jowl corned beef tail brisket tongue short loin boudin salami. Salami shank brisket ribeye ball tip pancetta shoulder bresaola meatloaf fatback hamburger. Porchetta sirloin shank pancetta ground round, t-bone fatback pork. Kielbasa filet mignon pork chop tail.
