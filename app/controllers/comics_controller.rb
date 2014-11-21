@@ -1,4 +1,6 @@
-before_action :require_user, only: [:create, :destroy]
+class ComicsController < ApplicationController
+
+  before_action :require_user, only: [:create, :destroy]
 
   def index
     @comics = Comic.all
@@ -37,4 +39,5 @@ before_action :require_user, only: [:create, :destroy]
   def comic_params
     params.require(:comic).permit(:title, :img_url)
   end
+
 end
