@@ -18,4 +18,8 @@ module ApplicationHelper
   def random_comic
     1 + rand(Comic.count)
   end
+
+  def order_month(comics)
+    comics.order('created_at DESC').group_by {|comic| comic.created_at.beginning_of_month}
+  end
 end
